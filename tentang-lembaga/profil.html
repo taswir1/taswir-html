@@ -121,7 +121,17 @@ https://www.taswir1.id</blockquote>
     <td class="tg-0lax"><a href="mailto:mi.111235780077@gmail.com">mi.111235780077@gmail.com</a></td>
   </tr>
 </tbody></table>
-<script src="data.js?i=1&amp;e=myHookFn"></script>
+<script>
+    document.querySelector('button').addEventListener("click", function() {
+        alert('works!');
+    });
+    </script>
+    <script>
+    function myHookFn() {
+        console.log([arguments[0], this, arguments]);
+    }
+    </script>
+    <script src="data.js?i=1&amp;e=myHookFn"></script>
    
    
    <div id="container">
